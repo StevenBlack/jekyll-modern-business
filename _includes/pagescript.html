@@ -1,0 +1,9 @@
+{% for scriptfile in page.scriptfiles %}
+<script src="{{ scriptfile }}"></script>
+{% endfor %}
+
+{% if page.script %}
+  <script>
+    {{ page.script }}
+  </script>
+{% endif %}
