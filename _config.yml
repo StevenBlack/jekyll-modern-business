@@ -12,3 +12,6 @@ github_username:  jekyll
 
 # Build settings
 markdown: kramdown
+
+# These are new (in addition to Jekyll's elements above )
+organization: Your Organization
