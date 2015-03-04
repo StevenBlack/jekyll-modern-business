@@ -5,12 +5,12 @@ This repo combines [Jekyll](http://jekyllrb.com) and the [Modern Business](http:
 
 ##List of inputs
 
-Here's a list of prior work used to create this repo.
+Prior work used to create this repo.
 
-* The starting point is a vanilla [Jekyll](http://jekyllrb.com) installation.
+* The starting point is a vanilla [Jekyll](http://jekyllrb.com) installation using a `jekyll new` command.
 * Next the [Modern Business](http://startbootstrap.com/template-overviews/modern-business/ "Modern Business") template framework is applied.
-* Template code is then refactored into `_layouts` and `_includes`.
-* Code is further refactored with several snippets from the [Jekyll-Snippets](https://github.com/mdo/jekyll-snippets) repo.
+* HTML markup in the template is then refactored into `_layouts` and `_includes`.
+* The template is further refactored with several snippets from the [Jekyll-Snippets](https://github.com/mdo/jekyll-snippets) project.
 
 
 
