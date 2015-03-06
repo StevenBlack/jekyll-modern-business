@@ -23,59 +23,25 @@ layout: default
     <!-- Blog Entries Column -->
     <div class="col-md-8">
 
-        <!-- First Blog Post -->
-        <h2>
-            <a href="#">Blog Post Title</a>
-        </h2>
-        <p class="lead">
-            by <a href="index.php">Start Bootstrap</a>
-        </p>
-        <p><i class="fa fa-clock-o"></i> Posted on August 28, 2013 at 10:00 PM</p>
-        <hr>
-        <a href="blog-post.html">
-            <img class="img-responsive img-hover" src="http://placehold.it/900x300" alt="">
-        </a>
-        <hr>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore, veritatis, tempora, necessitatibus inventore nisi quam quia repellat ut tempore laborum possimus eum dicta id animi corrupti debitis ipsum officiis rerum.</p>
-        <a class="btn btn-primary" href="#">Read More <i class="fa fa-angle-right"></i></a>
+        {% for post in site.posts %}
+            <h2>
+                <a href="{{ post.url }}">{{ post.title }}</a>
+            </h2>
+            <p class="lead">
+                by <a href="index.php">{{ post.author }}</a>
+            </p>
+            <p><i class="fa fa-clock-o"></i> Posted on {{ post.date | date: "%B %-d, %Y" }} at 10:00 PM</p>
+            <hr>
+            <a href="blog-post.html">
+                <img class="img-responsive img-hover" src="{{ site.placeholderimagesbaseurl }}{{ post.previewimage }}" alt="">
+            </a>
+            <hr>
+            <p>{{ post.excerpt }}</p>
+            <a class="btn btn-primary" href="{{ post.url }}">Read More <i class="fa fa-angle-right"></i></a>
 
-        <hr>
+            <hr>
 
-        <!-- Second Blog Post -->
-        <h2>
-            <a href="#">Blog Post Title</a>
-        </h2>
-        <p class="lead">
-            by <a href="index.php">Start Bootstrap</a>
-        </p>
-        <p><i class="fa fa-clock-o"></i> Posted on August 28, 2013 at 10:45 PM</p>
-        <hr>
-        <a href="blog-post.html">
-            <img class="img-responsive img-hover" src="http://placehold.it/900x300" alt="">
-        </a>
-        <hr>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam, quasi, fugiat, asperiores harum voluptatum tenetur a possimus nesciunt quod accusamus saepe tempora ipsam distinctio minima dolorum perferendis labore impedit voluptates!</p>
-        <a class="btn btn-primary" href="#">Read More <i class="fa fa-angle-right"></i></a>
-
-        <hr>
-
-        <!-- Third Blog Post -->
-        <h2>
-            <a href="#">Blog Post Title</a>
-        </h2>
-        <p class="lead">
-            by <a href="index.php">Start Bootstrap</a>
-        </p>
-        <p><i class="fa fa-clock-o"></i> Posted on August 28, 2013 at 10:45 PM</p>
-        <hr>
-        <a href="blog-post.html">
-            <img class="img-responsive img-hover" src="http://placehold.it/900x300" alt="">
-        </a>
-        <hr>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate, voluptates, voluptas dolore ipsam cumque quam veniam accusantium laudantium adipisci architecto itaque dicta aperiam maiores provident id incidunt autem. Magni, ratione.</p>
-        <a class="btn btn-primary" href="#">Read More <i class="fa fa-angle-right"></i></a>
-
-        <hr>
+        {% endfor %}
 
         <!-- Pager -->
         <ul class="pager">
