@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Blog Post four
+title: Blog Post Number Four
 author: Start Bootstrap
 previewimage: 900x300
 excerpt: >
