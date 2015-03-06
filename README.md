@@ -3,7 +3,7 @@
 This repo combines [Jekyll](http://jekyllrb.com) and the [Modern Business](http://startbootstrap.com/template-overviews/modern-business/ "Modern Business") template framework from [Start Bootstrap](http://startbootstrap.com/ "Start Bootstrap").
 
 
-##List of inputs
+##Prior work
 
 Prior work used to create this repo.
 
@@ -14,7 +14,7 @@ Prior work used to create this repo.
 
 
 
-##Original Readme — Start Bootstrap - Modern Business
+##Original readme — Start Bootstrap - Modern Business
 
 For reference, here is the `readme` from the Start Bootstrap - Modern Business repo.
 
