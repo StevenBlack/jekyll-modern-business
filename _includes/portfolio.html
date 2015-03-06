@@ -1,0 +1,16 @@
+{% if page.portfolio %}
+<!-- Portfolio Section -->
+<div class="row">
+    <div class="col-lg-12">
+        <h2 class="page-header">{{ page.portfolio.heading }}</h2>
+    </div>
+    {% for portfolioitem in page.portfolio.items %}
+    <div class="col-md-4 col-sm-6">
+        <a href="{{  portfolioitem.link }}">
+            <img class="img-responsive img-portfolio img-hover" src="{{ site.placeholderimagesbaseurl }}{{ portfolioitem.img }}" alt="{{ portfolioitem.alt }}">
+        </a>
+    </div>
+    {% endfor %}
+</div>
+<!-- /.row -->
+{% endif %}
