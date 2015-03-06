@@ -4,7 +4,7 @@ title: Blog Post four
 author: Start Bootstrap
 previewimage: 900x300
 excerpt: >
-  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus, vero, obcaecati, aut, error quam sapiente nemo saepe quibusdam sit excepturi nam quia corporis eligendi eos magni recusandae laborum minus inventore?
+  IThis is the excerpt for blog post number 4. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus, vero, obcaecati, aut, error quam sapiente nemo saepe quibusdam sit excepturi nam quia corporis eligendi eos magni recusandae laborum minus inventore?
 
 ---
 
