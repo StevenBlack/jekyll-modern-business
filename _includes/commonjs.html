@@ -1,7 +1,12 @@
+{% if site.github.url %}
+  {% assign url_base = site.github.url %}
+{% else %}
+  {% assign url_base = site.url %}
+{% endif %}
 <!-- jQuery -->
-<script src="/js/jquery.js"></script>
+<script src="{{ url.base }}/js/jquery.js"></script>
 
 <!-- Bootstrap Core JavaScript -->
-<script src="/js/bootstrap.min.js"></script>
+<script src="{{ url.base }}/js/bootstrap.min.js"></script>
 
 {% include pagescript.html %}
