@@ -25,10 +25,10 @@ layout: default
 
         {% for post in site.posts %}
             <h2>
-                <a href="{{ post.url }}">{{ post.title }}</a>
+                <a href="{{url_base}}/{{ post.url }}">{{ post.title }}</a>
             </h2>
             <p class="lead">
-                by <a href="index.php">{{ post.author }}</a>
+                by <a href="{{url_base}}/index.php">{{ post.author }}</a>
             </p>
             <p><i class="fa fa-clock-o"></i> Posted on {{ post.date | date: "%B %-d, %Y" }} at 10:00 PM</p>
             <hr>
@@ -37,7 +37,7 @@ layout: default
             </a>
             <hr>
             <p>{{ post.excerpt }}</p>
-            <a class="btn btn-primary" href="{{ post.url }}">Read More <i class="fa fa-angle-right"></i></a>
+            <a class="btn btn-primary" href="{{url_base}}/{{ post.url }}">Read More <i class="fa fa-angle-right"></i></a>
 
             <hr>
 
