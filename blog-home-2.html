@@ -2,7 +2,11 @@
 layout: default
 
 ---
-
+{% if site.github.url %}
+  {% assign url_base = site.github.url %}
+{% else %}
+  {% assign url_base = site.url %}
+{% endif %}
 <!-- Page Heading/Breadcrumbs -->
 <div class="row">
     <div class="col-lg-12">
@@ -27,18 +31,18 @@ layout: default
         <p>{{ post.date | date: "%B %-d, %Y" }}</p>
     </div>
     <div class="col-md-5">
-        <a href="{{ post.url }}">
+        <a href="{{url_base}}/{{ post.url }}">
             <img class="img-responsive img-hover" src="{{ site.placeholderimagesbaseurl }}{{ post.previewimage }}" alt="">
         </a>
     </div>
     <div class="col-md-6">
         <h3>
-            <a href="{{ post.url }}">{{ post.title }}</a>
+            <a href="{{url_base}}/{{ post.url }}">{{ post.title }}</a>
         </h3>
-        <p>by <a href="{{ post.url }}">{{ post.author }}</a>
+        <p>by <a href="{{url_base}}/{{ post.url }}">{{ post.author }}</a>
         </p>
         <p>{{ post.excerpt }}</p>
-        <a class="btn btn-primary" href="{{ post.url }}">Read More <i class="fa fa-angle-right"></i></a>
+        <a class="btn btn-primary" href="{{url_base}}/{{ post.url }}">Read More <i class="fa fa-angle-right"></i></a>
     </div>
 </div>
 <!-- /.row -->
