@@ -20,3 +20,12 @@ permalink: /:year/:title
 organization: Your Organization
 placeholderimagesbaseurl: http://placehold.it/
 
+collections:
+- members
+- services
+- partners
+- memberimages
+- orgimages
+- portfolio
+- faqs
+
