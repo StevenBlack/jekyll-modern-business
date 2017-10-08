@@ -32,50 +32,28 @@ layout: default
 <!-- /.row -->
 
 <!-- Team Members -->
+<h2>Our Team</h2>
 <div class="row">
+    {% for member in site.members %}
     <div class="col-lg-4 mb-4">
       <div class="card h-100 text-center">
         <img class="card-img-top" src="http://placehold.it/750x450" alt="">
         <div class="card-body">
-          <h4 class="card-title">Team Member</h4>
-          <h6 class="card-subtitle mb-2 text-muted">Position</h6>
-          <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus aut mollitia eum ipsum fugiat odio officiis odit.</p>
+          <h4 class="card-title">{{page.memtitle}} {{page.firstname}} {{page.lastname}}</h4>
+          <h6 class="card-subtitle mb-2 text-muted">{{member.role}}</h6>
+          <p class="card-text">{{member.description}}</p>
         </div>
         <div class="card-footer">
-          <a href="#">name@example.com</a>
+          <a href="#">{{member.email}}</a>
         </div>
       </div>
     </div>
-    <div class="col-lg-4 mb-4">
-      <div class="card h-100 text-center">
-        <img class="card-img-top" src="http://placehold.it/750x450" alt="">
-        <div class="card-body">
-          <h4 class="card-title">Team Member</h4>
-          <h6 class="card-subtitle mb-2 text-muted">Position</h6>
-          <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus aut mollitia eum ipsum fugiat odio officiis odit.</p>
-        </div>
-        <div class="card-footer">
-          <a href="#">name@example.com</a>
-        </div>
-      </div>
-    </div>
-    <div class="col-lg-4 mb-4">
-      <div class="card h-100 text-center">
-        <img class="card-img-top" src="http://placehold.it/750x450" alt="">
-        <div class="card-body">
-          <h4 class="card-title">Team Member</h4>
-          <h6 class="card-subtitle mb-2 text-muted">Position</h6>
-          <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus aut mollitia eum ipsum fugiat odio officiis odit.</p>
-        </div>
-        <div class="card-footer">
-          <a href="#">name@example.com</a>
-        </div>
-      </div>
-    </div>
+    {% endfor %}
   </div>
 <!-- /.row -->
 
 <!-- Our Customers -->
+<h2>Our Partners</h2>
 <div class="row">
     <div class="col-lg-2 col-sm-4 mb-4">
       <img class="img-fluid" src="http://placehold.it/500x300" alt="">
