@@ -4,22 +4,23 @@ layout: default
 ---
 <div class="row">
     <div class="col-md-4 text-center">
-        <div class="thumbnail">
-            <img class="img-responsive img-profile" style="height:200px;" src="{{member.image}}" alt="">
-            <div class="caption">
-                <h3>{{page.memtitle}} {{page.firstname}} {{page.lastname}}<br>
+
+    	<div class="card h-100">
+            <img class="img-fluid img-profile" style="height:200px;" src="{{ site.placeholderimagesbaseurl }}{{ page.previewimage }}" alt="">
+            <div class="card-body">
+                <h3 class="card-title">{{page.memtitle}} {{page.firstname}} {{page.lastname}}<br>
                     <small>{{page.role}}</small>
                 </h3>
-                <p>{{page.description}}</p>
-                <ul class="list-inline">
-                    <li><a href="#"><i class="fa fa-2x fa-facebook-square"></i></a>
+                <p class="card-text">{{page.description}}</p>
+                <ul class="card-text list-inline">
+                    <li class="list-inline-item"><a href="#"><i class="fa fa-2x fa-facebook-square"></i></a>
                     </li>
-                    <li><a href="#"><i class="fa fa-2x fa-linkedin-square"></i></a>
+                    <li class="list-inline-item"><a href="#"><i class="fa fa-2x fa-linkedin-square"></i></a>
                     </li>
-                    <li><a href="#"><i class="fa fa-2x fa-twitter-square"></i></a>
+                    <li class="list-inline-item"><a href="#"><i class="fa fa-2x fa-twitter-square"></i></a>
                     </li>
                 </ul>
-                <a href="{{member.website}}">Web: {{page.website}}</a>
+                <a class="card-text" href="{{member.website}}">Web: {{page.website}}</a>
             </div>
         </div>
     </div>
