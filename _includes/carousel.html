@@ -13,7 +13,6 @@
         {% for image in page.carousel %}
         <div class="carousel-item{% if forloop.first %} active{% endif %}">
             <img class="{%if forloop.first %}first{%elsif forloop.second %} second{%elsif forloop.third %} third{% endif %}" src="{{ site.placeholderimagesbaseurl }}{{ image.img }}{% if img.txt %}&text={{ img.txt }}{% endif %}">
-            <!-- <div class="fill" style="background-image:url('{{ site.placeholderimagesbaseurl }}{{ image.img }}{% if img.txt %}&text={{ img.txt }}{% endif %}');"></div> -->
             <div class="carousel-caption">
                 <h2>{{ image.caption }}</h2>
             </div>
