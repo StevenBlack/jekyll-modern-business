@@ -1,0 +1,27 @@
+---
+layout: default
+
+---
+<div class="row">
+    <div class="col-md-4 text-center">
+
+    	<div class="card h-100">
+            <div class="text-center">
+            <span class="fa-stack fa-5x">
+                  <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                  <i class="fa {{page.icon}} fa-stack-1x fa-inverse"></i>
+            </span>
+            </div>
+            <div class="card-body">
+                <h3 class="card-title">{{page.title}}</h3>
+                <p class="card-text">{{page.description}}</p>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-8">
+        <h2>About {{page.title}}</h2>
+        <p>{{content}}</p>
+    </div>
+</div>
+
+

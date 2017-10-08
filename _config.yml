@@ -21,11 +21,13 @@ organization: Your Organization
 placeholderimagesbaseurl: http://placehold.it/
 
 collections:
-- members
-- services
-- partners
-- memberimages
-- orgimages
-- portfolio
-- faqs
+  members:
+    output: true
+  services:
+    output: true
+  partners:
+  memberimages:
+  orgimages:
+  portfolio:
+  faqs:
 
