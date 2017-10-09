@@ -31,7 +31,8 @@ collections:
   partners:
   memberimages:
   orgimages:
-  portfolio:
+  portfolios:
+    output: true
   faqs:
 
 ## Organisation Details
