@@ -5,6 +5,8 @@ description: > # this means to ignore newlines until "baseurl:"
   Write an awesome description for your new site here. You can edit this
   line in _config.yml. It will appear in your document head meta (for
   Google search results) and in your feed.xml site description.
+author:
+keywords:
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://yourdomain.com" # the base hostname & protocol for your site
 twitter_username: jekyllrb
@@ -20,3 +22,33 @@ permalink: /:year/:title
 organization: Your Organization
 placeholderimagesbaseurl: http://placehold.it/
 
+# Collection details to manage
+collections:
+  members:
+    output: true
+  services:
+    output: true
+  partners:
+  memberimages:
+  orgimages:
+  portfolios:
+    output: true
+  faqs:
+
+## Organisation Details
+org-address-line-1: 3481 Melrose Place
+org-address-line-2:
+org-suburb: Beverly Hills
+org-state: CA
+org-postcode: 90210
+org-phone: (123) 456-7890
+org-mobile:
+org-email: name@example.com
+org-opening-hours-monday: 9:00 AM - 5:00 PM
+org-opening-hours-tuesday: 9:00 AM - 5:00 PM
+org-opening-hours-wednesday: 9:00 AM - 5:00 PM
+org-opening-hours-thursday: 9:00 AM - 5:00 PM
+org-opening-hours-friday: 9:00 AM - 5:00 PM
+org-opening-hours-saturday: 9:00 AM - 2:00 PM
+org-opening-hours-sunday:  Closed
+map-link: "http://maps.google.com/maps?hl=en&amp;ie=UTF8&amp;ll=37.0625,-95.677068&amp;spn=56.506174,79.013672&amp;t=m&amp;z=4&amp;output=embed"

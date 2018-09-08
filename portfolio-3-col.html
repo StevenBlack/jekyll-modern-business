@@ -10,9 +10,8 @@ layout: default
             <small>Subheading</small>
         </h1>
         <ol class="breadcrumb">
-            <li><a href="{{url_base}}/index.html">Home</a>
-            </li>
-            <li class="active">Three Column Portfolio</li>
+            <li class="breadcrumb-item"><a href="{{url_base}}/index.html">Home</a></li>
+            <li class="breadcrumb-item active">Three Column Portfolio</li>
         </ol>
     </div>
 </div>
@@ -20,97 +19,20 @@ layout: default
 
 <!-- Projects Row -->
 <div class="row">
-    <div class="col-md-4 img-portfolio">
-        <a href="{{url_base}}/portfolio-item.html">
-            <img class="img-responsive img-hover" src="http://placehold.it/700x400" alt="">
-        </a>
-        <h3>
-            <a href="{{url_base}}/portfolio-item.html">Project Name</a>
-        </h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.</p>
+    {% for portfolio in site.portfolios %}
+    <div class="col-lg-4 col-sm-6 portfolio-item">
+      <div class="card h-100">
+        <a href="{{portfolio.url}}"><img class="card-img-top" src="http://placehold.it/700x400" alt=""></a>
+        <div class="card-body">
+          <h4 class="card-title">
+            <a href="{{portfolio.url}}">{{portfolio.title}}</a>
+          </h4>
+          <p class="card-text">{{portfolio.description}}</p>
+        </div>
+      </div>
     </div>
-    <div class="col-md-4 img-portfolio">
-        <a href="{{url_base}}/portfolio-item.html">
-            <img class="img-responsive img-hover" src="http://placehold.it/700x400" alt="">
-        </a>
-        <h3>
-            <a href="{{url_base}}/portfolio-item.html">Project Name</a>
-        </h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.</p>
-    </div>
-    <div class="col-md-4 img-portfolio">
-        <a href="portfolio-item.html">
-            <img class="img-responsive img-hover" src="http://placehold.it/700x400" alt="">
-        </a>
-        <h3>
-            <a href="{{url_base}}/portfolio-item.html">Project Name</a>
-        </h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.</p>
-    </div>
-</div>
-<!-- /.row -->
-
-<!-- Projects Row -->
-<div class="row">
-    <div class="col-md-4 img-portfolio">
-        <a href="{{url_base}}/portfolio-item.html">
-            <img class="img-responsive img-hover" src="http://placehold.it/700x400" alt="">
-        </a>
-        <h3>
-            <a href="{{url_base}}/portfolio-item.html">Project Name</a>
-        </h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.</p>
-    </div>
-    <div class="col-md-4 img-portfolio">
-        <a href="{{url_base}}/portfolio-item.html">
-            <img class="img-responsive img-hover" src="http://placehold.it/700x400" alt="">
-        </a>
-        <h3>
-            <a href="{{url_base}}/portfolio-item.html">Project Name</a>
-        </h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.</p>
-    </div>
-    <div class="col-md-4 img-portfolio">
-        <a href="{{url_base}}/portfolio-item.html">
-            <img class="img-responsive img-hover" src="http://placehold.it/700x400" alt="">
-        </a>
-        <h3>
-            <a href="{{url_base}}/portfolio-item.html">Project Name</a>
-        </h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.</p>
-    </div>
-</div>
-
-<!-- Projects Row -->
-<div class="row">
-    <div class="col-md-4 img-portfolio">
-        <a href="{{url_base}}/portfolio-item.html">
-            <img class="img-responsive img-hover" src="http://placehold.it/700x400" alt="">
-        </a>
-        <h3>
-            <a href="{{url_base}}/portfolio-item.html">Project Name</a>
-        </h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.</p>
-    </div>
-    <div class="col-md-4 img-portfolio">
-        <a href="{{url_base}}/portfolio-item.html">
-            <img class="img-responsive img-hover" src="http://placehold.it/700x400" alt="">
-        </a>
-        <h3>
-            <a href="{{url_base}}/portfolio-item.html">Project Name</a>
-        </h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.</p>
-    </div>
-    <div class="col-md-4 img-portfolio">
-        <a href="{{url_base}}/portfolio-item.html">
-            <img class="img-responsive img-hover" src="http://placehold.it/700x400" alt="">
-        </a>
-        <h3>
-            <a href="{{url_base}}/portfolio-item.html">Project Name</a>
-        </h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.</p>
-    </div>
-</div>
+    {% endfor %}
+  </div>
 <!-- /.row -->
 
 <hr>

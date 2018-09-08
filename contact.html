@@ -13,9 +13,8 @@ scriptfiles:
             <small>Subheading</small>
         </h1>
         <ol class="breadcrumb">
-            <li><a href="index.html">Home</a>
-            </li>
-            <li class="active">Contact</li>
+            <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+            <li class="breadcrumb-item active">Contact</li>
         </ol>
     </div>
 </div>
@@ -26,32 +25,39 @@ scriptfiles:
     <!-- Map Column -->
     <div class="col-md-8">
         <!-- Embedded Google Map -->
-        <iframe width="100%" height="400px" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="http://maps.google.com/maps?hl=en&amp;ie=UTF8&amp;ll=37.0625,-95.677068&amp;spn=56.506174,79.013672&amp;t=m&amp;z=4&amp;output=embed"></iframe>
+        <iframe width="100%" height="400px" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="{{site.map-link}}"></iframe>
     </div>
     <!-- Contact Details Column -->
     <div class="col-md-4">
         <h3>Contact Details</h3>
         <p>
-            3481 Melrose Place<br>Beverly Hills, CA 90210<br>
+            {{site.org-address-line-1}}<br>{{site.org-suburb}}, {{site.org-state}} {{site.org-postcode}}<br>
         </p>
         <p><i class="fa fa-phone"></i>
-            <abbr title="Phone">P</abbr>: (123) 456-7890</p>
+            <abbr title="Phone">P</abbr>: {{site.org-phone}}</p>
         <p><i class="fa fa-envelope-o"></i>
-            <abbr title="Email">E</abbr>: <a href="mailto:name@example.com">name@example.com</a>
+            <abbr title="Email">E</abbr>: <a href="mailto:{{site.org-email}}">{{site.org-email}}</a>
         </p>
-        <p><i class="fa fa-clock-o"></i>
-            <abbr title="Hours">H</abbr>: Monday - Friday: 9:00 AM to 5:00 PM</p>
+        <ul>
+            <li><a>Monday: {{site.org-opening-hours-monday}}</a></li>
+            <li><a>Tuesday: {{site.org-opening-hours-tuesday}}</a></li>
+            <li><a>Wednesday: {{site.org-opening-hours-wednesday}}</a></li>
+            <li><a>Thursday: {{site.org-opening-hours-thursday}}</a></li>
+            <li><a>Friday: {{site.org-opening-hours-friday}}</a></li>
+            <li><a>Saturday: {{site.org-opening-hours-saturday}}</a></li>
+            <li><a>Sunday: {{site.org-opening-hours-sunday}}</a></li>
+        </ul>
         <ul class="list-unstyled list-inline list-social-icons">
-            <li>
+            <li class="list-inline-item">
                 <a href="#"><i class="fa fa-facebook-square fa-2x"></i></a>
             </li>
-            <li>
+            <li class="list-inline-item">
                 <a href="#"><i class="fa fa-linkedin-square fa-2x"></i></a>
             </li>
-            <li>
+            <li class="list-inline-item">
                 <a href="#"><i class="fa fa-twitter-square fa-2x"></i></a>
             </li>
-            <li>
+            <li class="list-inline-item">
                 <a href="#"><i class="fa fa-google-plus-square fa-2x"></i></a>
             </li>
         </ul>
@@ -62,7 +68,7 @@ scriptfiles:
 <!-- Contact Form -->
 <!-- In order to set the email address and subject line for the contact form go to the bin/contact_me.php file. -->
 <div class="row">
-    <div class="col-md-8">
+    <div class="mt-5 mb-4 col-md-8">
         <h3>Send us a Message</h3>
         <form name="sentMessage" id="contactForm" novalidate>
             <div class="control-group form-group">

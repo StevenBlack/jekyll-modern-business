@@ -1,0 +1,31 @@
+---
+layout: default
+
+---
+<div class="row">
+    <div class="col-md-4 text-center">
+
+    	<div class="card h-100">
+            <img class="img-fluid img-profile" style="height:200px;" src="{{ site.placeholderimagesbaseurl }}{{ page.previewimage }}" alt="">
+            <div class="card-body">
+                <h3 class="card-title">{{page.memtitle}} {{page.firstname}} {{page.lastname}}<br>
+                    <small>{{page.role}}</small>
+                </h3>
+                <p class="card-text">{{page.description}}</p>
+                <ul class="card-text list-inline">
+                    <li class="list-inline-item"><a href="#"><i class="fa fa-2x fa-facebook-square"></i></a>
+                    </li>
+                    <li class="list-inline-item"><a href="#"><i class="fa fa-2x fa-linkedin-square"></i></a>
+                    </li>
+                    <li class="list-inline-item"><a href="#"><i class="fa fa-2x fa-twitter-square"></i></a>
+                    </li>
+                </ul>
+                <a class="card-text" href="{{member.website}}">Web: {{page.website}}</a>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-8">
+        <h2>About {{page.memtitle}} {{page.lastname}}</h2>
+        <p>{{content}}</p>
+    </div>
+</div>

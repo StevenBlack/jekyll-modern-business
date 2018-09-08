@@ -14,9 +14,8 @@ layout: default
             <small>Subheading</small>
         </h1>
         <ol class="breadcrumb">
-            <li><a href="{{url_base}}/index.html">Home</a>
-            </li>
-            <li class="active">Blog Home Two</li>
+            <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+            <li class="breadcrumb-item active">Blog Home 2</li>
         </ol>
     </div>
 </div>
@@ -32,7 +31,7 @@ layout: default
     </div>
     <div class="col-md-5">
         <a href="{{url_base}}/{{ post.url }}">
-            <img class="img-responsive img-hover" src="{{ site.placeholderimagesbaseurl }}{{ post.previewimage }}" alt="">
+            <img class="img-fluid img-hover" src="{{ site.placeholderimagesbaseurl }}{{ post.previewimage }}" alt="">
         </a>
     </div>
     <div class="col-md-6">
